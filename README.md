@@ -26,6 +26,8 @@ One SVG avatar per GitHub App. The SVGs are the source; PNGs are generated and n
   accent colour so the avatars stay distinct at the 20px GitHub shows them at.
 - **Sentinel Apps** use the same layout with a charcoal-and-red night palette, so they read as a
   different family.
+- **chaosbit Apps** (org tooling that is neither Kamino nor Sentinel) use the same layout with a
+  dark-green palette.
 
 | App | Avatar | Accent |
 |---|---|---|
@@ -40,6 +42,7 @@ One SVG avatar per GitHub App. The SVGs are the source; PNGs are generated and n
 | kamino-registry-read | Image crates under a lens | `#FB923C` orange |
 | kamino-shadow | Hooded silhouette, dashed outline | `#94A3B8` slate |
 | kamino-verify | DNA helix with an approval seal | `#14B8A6` teal |
+| chaosbit-renovate | Build droid with a wrench inside refresh arrows | `#FACC15` yellow |
 | sentinel-registry-reader | Watchtower with a searchlight and padlock shield | `#EF4444` red |
 
 ### Adding an App
