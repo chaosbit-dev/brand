@@ -44,19 +44,26 @@ def contact_sheet(pngs: list[Path]) -> Path:
         f'<img src="{p.name}" width="200"><br>{p.stem}</div>'
         for p in pngs
     )
-    small = "".join(
-        f'<img src="{p.name}" width="40" style="border-radius:50%">' for p in pngs
-    ) + "".join(f'<img src="{p.name}" width="20">' for p in pngs)
+    row = '<div style="display:flex;gap:8px;align-items:center;margin-top:12px">'
+    small = (
+        row
+        + "".join(
+            f'<img src="{p.name}" width="40" style="border-radius:50%">' for p in pngs
+        )
+        + "</div>"
+        + row
+        + "".join(f'<img src="{p.name}" width="20">' for p in pngs)
+        + "</div>"
+    )
     html = OUT / "sheet.html"
     html.write_text(
         '<html><body style="margin:0;background:#fff;padding:16px;width:900px">'
         f'<div style="display:flex;flex-wrap:wrap;gap:12px">{big}</div>'
-        f'<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;'
-        f'margin-top:12px">{small}</div></body></html>'
+        f"{small}</body></html>"
     )
     rows = -(-len(pngs) // 4)
     sheet = OUT / "sheet.png"
-    screenshot(html, sheet, 900, rows * 236 + 120)
+    screenshot(html, sheet, 900, rows * 236 + 140)
     return sheet
 
 
