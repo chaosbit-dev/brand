@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#0A1622"/><stop offset="0.62" stop-color="#14324A"/><stop offset="1" stop-color="#0B2236"/>
+ </linearGradient>
+ <radialGradient id="glow" cx="0.5" cy="0.45" r="0.5">
+  <stop offset="0" stop-color="#22D3EE" stop-opacity="0.35"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+ </radialGradient>
+</defs>
+<rect width="512" height="512" fill="url(#sky)"/>
+<g stroke="#9FC3D9" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round">
+ <line x1="60" y1="40" x2="40" y2="110"/><line x1="150" y1="20" x2="130" y2="90"/><line x1="420" y1="30" x2="400" y2="100"/>
+ <line x1="480" y1="120" x2="460" y2="190"/><line x1="30" y1="200" x2="10" y2="270"/><line x1="350" y1="10" x2="335" y2="60"/>
+ <line x1="90" y1="300" x2="72" y2="360"/><line x1="470" y1="280" x2="452" y2="340"/>
+</g>
+<path d="M410 34 l-22 52 h18 l-14 40 l36 -56 h-18 l14 -36z" fill="#E8F4F8" fill-opacity="0.22"/>
+<circle cx="256" cy="230" r="230" fill="url(#glow)"/>
+<path d="M0 430 Q32 410 64 430 T128 430 T192 430 T256 430 T320 430 T384 430 T448 430 T512 430 V512 H0Z" fill="#1C4A66"/>
+<path d="M0 458 Q32 440 64 458 T128 458 T192 458 T256 458 T320 458 T384 458 T448 458 T512 458 V512 H0Z" fill="#123A52"/>
+
+<g fill="none" stroke="#22D3EE" stroke-linecap="round">
+ <path d="M300 150 A60 60 0 0 1 360 210" stroke-width="12"/><path d="M300 104 A106 106 0 0 1 406 210" stroke-width="12" stroke-opacity="0.7"/><path d="M300 58 A152 152 0 0 1 452 210" stroke-width="12" stroke-opacity="0.4"/>
+</g>
+<path d="M140 150 A150 150 0 0 0 330 340 Z" fill="#E8F4F8"/>
+<path d="M140 150 A150 150 0 0 0 330 340" fill="none" stroke="#C9DCE6" stroke-width="10"/>
+<line x1="235" y1="245" x2="300" y2="180" stroke="#C9DCE6" stroke-width="10" stroke-linecap="round"/>
+<circle cx="300" cy="180" r="16" fill="#22D3EE"/>
+<rect x="210" y="320" width="40" height="80" fill="#C9DCE6"/><path d="M170 420 L290 420 L260 390 L200 390Z" fill="#C9DCE6"/>
+<g fill="#22D3EE" fill-opacity="0.85"><circle cx="120" cy="300" r="6"/><circle cx="96" cy="250" r="4"/><circle cx="380" cy="300" r="5"/></g>
+</svg>
