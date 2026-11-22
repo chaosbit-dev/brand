@@ -1,6 +1,7 @@
 # brand
 
-Visual assets for chaosbit-dev: the chaosbit logos, and the avatars for the org's GitHub Apps.
+Visual assets for chaosbit-dev: the chaosbit logos, and the avatars for the org's GitHub Apps,
+accounts and teams.
 
 Nothing here is deployed or cloned by automation, so it can hold binaries without
 bloating the repos agents clone all day.
@@ -43,6 +44,8 @@ One SVG avatar per GitHub App. The SVGs are the source; PNGs are generated and n
 | kamino-shadow | Hooded silhouette, dashed outline | `#94A3B8` slate |
 | kamino-verify | DNA helix with an approval seal | `#14B8A6` teal |
 | chaosbit-renovate | Build droid with a wrench inside refresh arrows | `#FACC15` yellow |
+| chaosbit-vault-writer | Datapad with a stylus (writes to datapad) | `#F97316` orange |
+| chaosbit-vault-reader | Jedi holocron under a lens (reads holocron) | `#60A5FA` blue |
 | sentinel-registry-reader | Watchtower with a searchlight and padlock shield | `#EF4444` red |
 
 ### Adding an App
@@ -54,10 +57,23 @@ One SVG avatar per GitHub App. The SVGs are the source; PNGs are generated and n
 3. Render and check the contact sheet at 40px and 20px:
 
    ```sh
-   python3 scripts/render.py            # all, or: python3 scripts/render.py <app-slug>
+   python3 scripts/render.py            # all, or: python3 scripts/render.py <slug>
    open out/sheet.png
    ```
 
 4. Upload `out/<app-slug>.png` in the App's settings: Display information → Upload a logo.
    GitHub has no API for App logos.
 5. Add a row to the table above.
+
+## accounts/
+
+Avatars for the org's GitHub user accounts and teams. They use the Kamino palette and the same
+template as the Apps, and `render.py` renders them alongside the Apps.
+
+| Account or team | Avatar | Accent |
+|---|---|---|
+| chaosbit-kamino (user) | Clone trooper helmet with an `@` badge | `#6366F1` indigo |
+| kamino-agents (team) | Clone squad of three, marked green, pink and sky | `#F472B6` pink |
+
+Upload `out/<slug>.png` by hand: a user's avatar in that account's Settings → Public profile, a
+team's in the org's Teams → the team → Settings → Profile picture.

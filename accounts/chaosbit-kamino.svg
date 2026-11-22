@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#0A1622"/><stop offset="0.62" stop-color="#14324A"/><stop offset="1" stop-color="#0B2236"/>
+ </linearGradient>
+ <radialGradient id="glow" cx="0.5" cy="0.45" r="0.5">
+  <stop offset="0" stop-color="#6366F1" stop-opacity="0.35"/><stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
+ </radialGradient>
+</defs>
+<rect width="512" height="512" fill="url(#sky)"/>
+<g stroke="#9FC3D9" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round">
+ <line x1="60" y1="40" x2="40" y2="110"/><line x1="150" y1="20" x2="130" y2="90"/><line x1="420" y1="30" x2="400" y2="100"/>
+ <line x1="480" y1="120" x2="460" y2="190"/><line x1="30" y1="200" x2="10" y2="270"/><line x1="350" y1="10" x2="335" y2="60"/>
+ <line x1="90" y1="300" x2="72" y2="360"/><line x1="470" y1="280" x2="452" y2="340"/>
+</g>
+<path d="M410 34 l-22 52 h18 l-14 40 l36 -56 h-18 l14 -36z" fill="#E8F4F8" fill-opacity="0.22"/>
+<circle cx="256" cy="230" r="230" fill="url(#glow)"/>
+<path d="M0 430 Q32 410 64 430 T128 430 T192 430 T256 430 T320 430 T384 430 T448 430 T512 430 V512 H0Z" fill="#1C4A66"/>
+<path d="M0 458 Q32 440 64 458 T128 458 T192 458 T256 458 T320 458 T384 458 T448 458 T512 458 V512 H0Z" fill="#123A52"/>
+
+<defs><g id="helmet"><path d="M160 240 Q160 128 256 128 Q352 128 352 240 V300 Q352 320 336 328 L300 344 L290 374 H222 L212 344 L176 328 Q160 320 160 300Z" fill="#E8F4F8"/>
+ <path d="M238 130 Q256 127 274 130 V214 H238Z" fill="currentColor"/>
+ <path d="M164 290 L196 300 V320 L172 312Z M348 290 L316 300 V320 L340 312Z" fill="currentColor"/>
+ <path d="M182 230 H330 Q338 230 338 238 V254 Q338 262 330 262 H286 V318 Q286 326 278 330 L262 338 H250 L234 330 Q226 326 226 318 V262 H182 Q174 262 174 254 V238 Q174 230 182 230Z" fill="#0A1622"/>
+ <path d="M190 240 H240" stroke="#9FC3D9" stroke-opacity="0.35" stroke-width="6" stroke-linecap="round"/>
+ <g stroke="#9FB8C6" stroke-width="5" stroke-linecap="round"><line x1="236" y1="352" x2="236" y2="366"/><line x1="250" y1="352" x2="250" y2="366"/><line x1="262" y1="352" x2="262" y2="366"/><line x1="276" y1="352" x2="276" y2="366"/></g>
+ <circle cx="160" cy="262" r="14" fill="#C9DCE6"/><circle cx="352" cy="262" r="14" fill="#C9DCE6"/></g></defs>
+<use href="#helmet" color="#6366F1" transform="translate(-20 -6)"/>
+<circle cx="348" cy="352" r="50" fill="#6366F1" stroke="#0A1622" stroke-width="10"/>
+<text x="348" y="372" text-anchor="middle" font-family="Menlo, monospace" font-weight="700" font-size="60" fill="#0A1622">@</text>
+</svg>
