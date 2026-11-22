@@ -29,6 +29,11 @@ One SVG avatar per GitHub App. The SVGs are the source; PNGs are generated and n
   different family.
 - **chaosbit Apps** (org tooling that is neither Kamino nor Sentinel) use the same layout with a
   dark-green palette.
+- **WBO Studios Apps** (the `wbo-studios` org, a separate org from chaosbit-dev) use the same
+  layout with WBO's own warm-brown palette from its website (`#14100E`, `#3A2E26`, cream `#EFE4D4`):
+  a starfield and a ringed planet instead of rain and lightning, and rolling ridges instead of waves.
+  WBO's v0.3.0 release is copyright-safe, so keep these icons original. No franchise characters
+  or marks.
 
 | App | Avatar | Accent |
 |---|---|---|
@@ -47,6 +52,7 @@ One SVG avatar per GitHub App. The SVGs are the source; PNGs are generated and n
 | chaosbit-vault-writer | Datapad with a stylus (writes to datapad) | `#F97316` orange |
 | chaosbit-vault-reader | Jedi holocron under a lens (reads holocron) | `#60A5FA` blue |
 | sentinel-registry-reader | Watchtower with a searchlight and padlock shield | `#EF4444` red |
+| wbo-studios-claude | d20 with `</>` on its top face (Claude, WBO's game-dev helper) | `#E0312B` WBO red |
 
 ### Adding an App
 
