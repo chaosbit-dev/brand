@@ -1,6 +1,6 @@
-"""Render the App avatar SVGs to PNG, plus a contact sheet for checking small sizes.
+"""Render the avatar SVGs (apps/ and accounts/) to PNG, plus a contact sheet for checking small sizes.
 
-Usage: python3 scripts/render.py [name ...]   (default: every apps/*.svg)
+Usage: python3 scripts/render.py [name ...]   (default: every apps/*.svg and accounts/*.svg)
 
 Output goes to out/, which is gitignored: PNGs are build products, regenerate them.
 Needs Google Chrome; set CHROME to its binary if it isn't in the macOS default spot.
@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-APPS = ROOT / "apps"
+SOURCES = (ROOT / "apps", ROOT / "accounts")
 OUT = ROOT / "out"
 CHROME = os.environ.get(
     "CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
@@ -68,11 +68,12 @@ def contact_sheet(pngs: list[Path]) -> Path:
 
 
 def main(names: list[str]) -> None:
-    sources = (
-        [APPS / f"{n}.svg" for n in names]
-        if names
-        else sorted(p for p in APPS.glob("*.svg") if not p.name.startswith("_"))
+    every = sorted(
+        (p for d in SOURCES for p in d.glob("*.svg") if not p.name.startswith("_")),
+        key=lambda p: p.stem,
     )
+    by_name = {p.stem: p for p in every}
+    sources = [by_name[n] for n in names] if names else every
     OUT.mkdir(exist_ok=True)
     pngs = []
     for src in sources:
