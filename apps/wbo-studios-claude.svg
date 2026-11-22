@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#14100E"/><stop offset="0.62" stop-color="#2A201A"/><stop offset="1" stop-color="#1F1915"/>
+ </linearGradient>
+ <radialGradient id="glow" cx="0.5" cy="0.45" r="0.5">
+  <stop offset="0" stop-color="#E0312B" stop-opacity="0.35"/><stop offset="1" stop-color="#E0312B" stop-opacity="0"/>
+ </radialGradient>
+</defs>
+<rect width="512" height="512" fill="url(#sky)"/>
+<!-- WBO family: a warm starfield and a ringed planet in place of Kamino's rain and lightning, rolling ridges in place of waves. -->
+<g fill="#EFE4D4" fill-opacity="0.28">
+ <circle cx="52" cy="62" r="3"/><circle cx="140" cy="34" r="2"/><circle cx="96" cy="150" r="2.5"/><circle cx="330" cy="26" r="2"/>
+ <circle cx="470" cy="160" r="3"/><circle cx="24" cy="236" r="2"/><circle cx="488" cy="300" r="2.5"/><circle cx="70" cy="330" r="2"/>
+ <circle cx="210" cy="20" r="1.8"/><circle cx="452" cy="230" r="1.8"/>
+</g>
+<g fill="none" stroke="#EFE4D4" stroke-opacity="0.22">
+ <circle cx="420" cy="74" r="26" fill="#EFE4D4" fill-opacity="0.16" stroke="none"/>
+ <ellipse cx="420" cy="74" rx="46" ry="12" stroke-width="5" transform="rotate(-18 420 74)"/>
+</g>
+<circle cx="256" cy="230" r="230" fill="url(#glow)"/>
+<path d="M0 430 Q64 404 128 424 T256 422 T384 418 T512 426 V512 H0Z" fill="#3A2E26"/>
+<path d="M0 462 Q80 444 160 458 T320 456 T512 452 V512 H0Z" fill="#2A201A"/>
+
+<!-- Icon: a d20, the dev helper for an RPG studio, with </> on its front face. -->
+<path d="M256 86 L386 161 L386 311 L256 386 L126 311 L126 161Z" fill="#9E1F1A"/>
+<path d="M256 136 L348 292 L164 292Z" fill="#E0312B"/>
+<path d="M256 86 L256 136 L126 161Z M256 86 L256 136 L386 161Z" fill="#C42822"/>
+<path d="M164 292 L256 386 L348 292Z" fill="#B8241F"/>
+<g fill="none" stroke="#EFE4D4" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+ <path d="M256 86 L386 161 L386 311 L256 386 L126 311 L126 161Z"/>
+ <path d="M256 136 L348 292 L164 292Z"/>
+ <path d="M256 86 L256 136 M126 161 L256 136 L386 161 M126 161 L164 292 L126 311 M386 161 L348 292 L386 311 M164 292 L256 386 L348 292"/>
+</g>
+<text x="256" y="262" text-anchor="middle" font-family="Menlo, monospace" font-weight="700" font-size="50" fill="#EFE4D4">&lt;/&gt;</text>
+</svg>
