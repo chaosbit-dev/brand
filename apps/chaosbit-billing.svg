@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#06120E"/><stop offset="0.62" stop-color="#0F2C24"/><stop offset="1" stop-color="#0A1E18"/>
+ </linearGradient>
+ <radialGradient id="glow" cx="0.5" cy="0.45" r="0.5">
+  <stop offset="0" stop-color="#4ADE80" stop-opacity="0.35"/><stop offset="1" stop-color="#4ADE80" stop-opacity="0"/>
+ </radialGradient>
+</defs>
+<rect width="512" height="512" fill="url(#sky)"/>
+<g stroke="#9FC3D9" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round">
+ <line x1="60" y1="40" x2="40" y2="110"/><line x1="150" y1="20" x2="130" y2="90"/><line x1="420" y1="30" x2="400" y2="100"/>
+ <line x1="480" y1="120" x2="460" y2="190"/><line x1="30" y1="200" x2="10" y2="270"/><line x1="350" y1="10" x2="335" y2="60"/>
+ <line x1="90" y1="300" x2="72" y2="360"/><line x1="470" y1="280" x2="452" y2="340"/>
+</g>
+<path d="M410 34 l-22 52 h18 l-14 40 l36 -56 h-18 l14 -36z" fill="#E8F4F8" fill-opacity="0.22"/>
+<circle cx="256" cy="230" r="230" fill="url(#glow)"/>
+<path d="M0 430 Q32 410 64 430 T128 430 T192 430 T256 430 T320 430 T384 430 T448 430 T512 430 V512 H0Z" fill="#16443A"/>
+<path d="M0 458 Q32 440 64 458 T128 458 T192 458 T256 458 T320 458 T384 458 T448 458 T512 458 V512 H0Z" fill="#0F332A"/>
+
+<!-- Icon: a receipt with a zigzag tear and a $ coin. The App delivers specimen $0.00 vendor paperwork. -->
+<g transform="translate(-22 4)">
+<path d="M150 96 H330 V330 L312 348 L294 330 L276 348 L258 330 L240 348 L222 330 L204 348 L186 330 L168 348 L150 330Z" fill="#E8F4F8"/>
+<rect x="150" y="96" width="180" height="16" fill="#C9DCE6"/>
+<text x="240" y="160" text-anchor="middle" font-family="Menlo, monospace" font-weight="700" font-size="30" fill="#06120E">$0.00</text>
+<g fill="#C9DCE6"><rect x="174" y="186" width="132" height="12" rx="6"/><rect x="174" y="212" width="104" height="12" rx="6"/><rect x="174" y="238" width="120" height="12" rx="6"/><rect x="174" y="264" width="80" height="12" rx="6"/></g>
+<circle cx="336" cy="306" r="68" fill="#4ADE80" stroke="#06120E" stroke-width="10"/>
+<circle cx="336" cy="306" r="50" fill="none" stroke="#06120E" stroke-opacity="0.35" stroke-width="5"/>
+<text x="336" y="334" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="80" fill="#06120E">$</text>
+</g>
+</svg>

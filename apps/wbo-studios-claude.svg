@@ -21,7 +21,7 @@
 <path d="M0 430 Q64 404 128 424 T256 422 T384 418 T512 426 V512 H0Z" fill="#3A2E26"/>
 <path d="M0 462 Q80 444 160 458 T320 456 T512 452 V512 H0Z" fill="#2A201A"/>
 
-<!-- Icon: a d20, the dev helper for an RPG studio, with </> on its top face. -->
+<!-- Icon: a d20, the dev helper for an RPG studio, with </> on its front face. -->
 <path d="M256 86 L386 161 L386 311 L256 386 L126 311 L126 161Z" fill="#9E1F1A"/>
 <path d="M256 136 L348 292 L164 292Z" fill="#E0312B"/>
 <path d="M256 86 L256 136 L126 161Z M256 86 L256 136 L386 161Z" fill="#C42822"/>
