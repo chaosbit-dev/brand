@@ -48,6 +48,7 @@ One SVG avatar per GitHub App. The SVGs are the source; PNGs are generated and n
 | kamino-registry-read | Image crates under a lens | `#FB923C` orange |
 | kamino-shadow | Hooded silhouette, dashed outline | `#94A3B8` slate |
 | kamino-verify | DNA helix with an approval seal | `#14B8A6` teal |
+| kamino-merge | Tipoca gate with a merge glyph through it; the lintel light goes green only at the merge | `#FDE047` lemon |
 | chaosbit-renovate | Build droid with a wrench inside refresh arrows | `#FACC15` yellow |
 | chaosbit-vault-writer | Datapad with a stylus (writes to datapad) | `#F97316` orange |
 | chaosbit-vault-reader | Jedi holocron under a lens (reads holocron) | `#60A5FA` blue |
