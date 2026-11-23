@@ -12,7 +12,7 @@
   <circle cx="2" cy="2" r="1.4" fill="#10B981" fill-opacity="0.10"/>
  </pattern>
 </defs>
-<!-- Shared chaosbit MCP social-preview frame (1280x640). Keep everything that matters inside GitHub's safe zone,
+<!-- Shared chaosbit social-preview frame (1280x640). Keep everything that matters inside GitHub's safe zone,
      x 80..1200 and y 80..560 (its repo-card template asks for a 40pt border): unfurlers crop the edges. Only the title, tagline, prompt and icon change per repo. -->
 <rect width="1280" height="640" fill="url(#bg)"/>
 <rect width="1280" height="640" fill="url(#dots)"/>
@@ -47,7 +47,7 @@
   <circle cx="-78" cy="-78" r="30" fill="#10B981"/><circle cx="-8" cy="-112" r="30" fill="#FACC15"/>
   <circle cx="-108" cy="-6" r="30" fill="#38BDF8"/><circle cx="-90" cy="68" r="30" fill="#F43F5E"/>
  </g>
- <g transform="rotate(40 40 20)">
+ <g transform="translate(-10 14) rotate(40 40 20)">
   <path d="M10 -120 h60 v120 l-30 70 l-30 -70z" fill="#E8F4F8" stroke="#10B981" stroke-width="6" stroke-linejoin="round"/>
   <path d="M10 -120 h60 v-26 a8 8 0 0 0 -8 -8 h-44 a8 8 0 0 0 -8 8z" fill="#10B981"/>
   <path d="M40 0 v52" stroke="#123A2F" stroke-width="6" stroke-linecap="round"/>

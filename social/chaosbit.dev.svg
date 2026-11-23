@@ -12,7 +12,7 @@
   <circle cx="2" cy="2" r="1.4" fill="#10B981" fill-opacity="0.10"/>
  </pattern>
 </defs>
-<!-- Shared chaosbit MCP social-preview frame (1280x640). Keep everything that matters inside GitHub's safe zone,
+<!-- Shared chaosbit social-preview frame (1280x640). Keep everything that matters inside GitHub's safe zone,
      x 80..1200 and y 80..560 (its repo-card template asks for a 40pt border): unfurlers crop the edges. Only the title, tagline, prompt and icon change per repo. -->
 <rect width="1280" height="640" fill="url(#bg)"/>
 <rect width="1280" height="640" fill="url(#dots)"/>
