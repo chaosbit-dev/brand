@@ -1,6 +1,8 @@
-"""Render the avatar SVGs (apps/ and accounts/) to PNG, plus a contact sheet for checking small sizes.
+"""Render the avatar SVGs (apps/ and accounts/) to PNG, plus a contact sheet for checking small sizes,
+and the repo social previews (social/) to 1280x640 PNGs.
 
 Usage: python3 scripts/render.py [name ...]   (default: every apps/*.svg and accounts/*.svg)
+       python3 scripts/render.py --social      (every social/*.svg, to out/social/)
 
 Output goes to out/, which is gitignored: PNGs are build products, regenerate them.
 Needs Google Chrome; set CHROME to its binary if it isn't in the macOS default spot.
@@ -20,6 +22,8 @@ CHROME = os.environ.get(
     "CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 )
 SIZE = 512
+SOCIAL = ROOT / "social"
+SOCIAL_SIZE = (1280, 640)
 
 
 def screenshot(src: Path, dest: Path, width: int, height: int) -> None:
@@ -67,7 +71,23 @@ def contact_sheet(pngs: list[Path]) -> Path:
     return sheet
 
 
+def social() -> None:
+    dest_dir = OUT / "social"
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    for src in sorted(SOCIAL.glob("*.svg")):
+        if src.name.startswith("_"):
+            continue
+        dest = dest_dir / f"{src.stem}.png"
+        screenshot(src, dest, *SOCIAL_SIZE)
+        print(dest.relative_to(ROOT))
+
+
 def main(names: list[str]) -> None:
+    if "--social" in names:
+        if names != ["--social"]:
+            sys.exit("usage: render.py --social   (renders every social/*.svg; takes no names)")
+        social()
+        return
     every = sorted(
         (p for d in SOURCES for p in d.glob("*.svg") if not p.name.startswith("_")),
         key=lambda p: p.stem,

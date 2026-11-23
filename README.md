@@ -85,3 +85,26 @@ template as the Apps, and `render.py` renders them alongside the Apps.
 
 Upload `out/<slug>.png` by hand: a user's avatar in that account's Settings → Public profile, a
 team's in the org's Teams → the team → Settings → Profile picture.
+
+## social/
+
+One 1280×640 social preview per MCP server repo, shown when a repo link is shared. They share one
+frame (dark-green terminal window, `#10B981` accent, an icon ring on the right) so the MCP
+servers read as a set; the title, tagline, prompt line and icon change per repo.
+
+| Repo | Icon |
+|---|---|
+| paperless-mcp | Document whose fields are lifted out under a lens |
+| comlink | Envelope broadcasting, with a check seal |
+| obsidian-git-mcp | Obsidian shard with a git branch through it |
+| homeassistant-mcp | House with a lit bulb and a thermostat dial |
+
+Keep everything that matters inside GitHub's safe zone, x 80–1200 and y 80–560: its repo-card
+template asks for a 40pt border, and unfurlers crop the edges.
+
+```sh
+python3 scripts/render.py --social      # writes out/social/<repo>.png
+```
+
+Upload `out/social/<repo>.png` in the repo's Settings → General → Social preview → Edit →
+Upload an image. GitHub has no API for it. Repos have no avatars of their own; only the org does.

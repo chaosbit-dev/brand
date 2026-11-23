@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640"><defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#06120E"/><stop offset="0.6" stop-color="#0F2C24"/><stop offset="1" stop-color="#0A1E18"/>
+ </linearGradient>
+ <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#10B981" stop-opacity="0.32"/><stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+ </radialGradient>
+ <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+  <rect width="4" height="1" fill="#000" fill-opacity="0.22"/>
+ </pattern>
+ <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+  <circle cx="2" cy="2" r="1.4" fill="#10B981" fill-opacity="0.10"/>
+ </pattern>
+</defs>
+<!-- Shared chaosbit MCP social-preview frame (1280x640). Keep everything that matters inside GitHub's safe zone,
+     x 80..1200 and y 80..560 (its repo-card template asks for a 40pt border): unfurlers crop the edges. Only the title, tagline, prompt and icon change per repo. -->
+<rect width="1280" height="640" fill="url(#bg)"/>
+<rect width="1280" height="640" fill="url(#dots)"/>
+<circle cx="972" cy="320" r="300" fill="url(#glow)"/>
+
+<!-- terminal window -->
+<g transform="translate(8 0)">
+<rect x="72" y="104" width="680" height="432" rx="18" fill="#030A08" fill-opacity="0.78" stroke="#10B981" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M72 122 a18 18 0 0 1 18 -18 h644 a18 18 0 0 1 18 18 v28 h-680z" fill="#0F2C24"/>
+<circle cx="102" cy="127" r="7" fill="#F43F5E" fill-opacity="0.85"/><circle cx="126" cy="127" r="7" fill="#FACC15" fill-opacity="0.85"/><circle cx="150" cy="127" r="7" fill="#10B981"/>
+<text x="412" y="133" text-anchor="middle" font-family="Menlo, monospace" font-size="17" fill="#C9DCE6" fill-opacity="0.75">chaosbit-dev/homeassistant-mcp</text>
+
+<g font-family="Menlo, monospace">
+ <text x="104" y="214" font-size="22" fill="#10B981">~/mcp <tspan fill="#C9DCE6">$</tspan> <tspan fill="#E8F4F8">claude mcp add homeassistant-mcp</tspan></text>
+ <text x="104" y="300" font-size="52" font-weight="700" fill="#E8F4F8">homeassistant-mcp</text>
+ <text x="104" y="352" font-size="23" fill="#C9DCE6">Home Assistant for Claude:</text>
+ <text x="104" y="386" font-size="23" fill="#C9DCE6">read state, call services; writes gated.</text>
+ <text x="104" y="470" font-size="19" fill="#10B981">[ MCP ]  [ Python ]  [ self-hosted ]</text>
+ <rect x="104" y="492" width="14" height="24" fill="#10B981"/>
+</g>
+</g>
+<rect width="1280" height="640" fill="url(#scan)"/>
+
+<!-- footer -->
+<text x="1196" y="552" text-anchor="end" font-family="Menlo, monospace" font-size="22" fill="#C9DCE6" fill-opacity="0.8">chaosbit<tspan fill="#10B981">.dev</tspan></text>
+
+<!-- icon ring: draw the repo's icon inside r~150 around (972,320) -->
+<circle cx="972" cy="320" r="178" fill="#030A08" fill-opacity="0.55" stroke="#10B981" stroke-width="4"/>
+<circle cx="972" cy="320" r="196" fill="none" stroke="#10B981" stroke-opacity="0.3" stroke-width="2" stroke-dasharray="6 10"/>
+<g transform="translate(972 330)">
+ <path d="M-130 -10 L0 -130 L130 -10" fill="none" stroke="#E8F4F8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+ <rect x="-102" y="-24" width="204" height="150" rx="10" fill="#E8F4F8"/>
+ <rect x="80" y="-118" width="26" height="62" rx="4" fill="#C9DCE6"/>
+ <circle cx="-42" cy="38" r="40" fill="#10B981" fill-opacity="0.25"/>
+ <path d="M-42 6 a26 26 0 0 1 16 46 v12 h-32 v-12 a26 26 0 0 1 16 -46z" fill="#10B981"/>
+ <rect x="-56" y="70" width="28" height="9" rx="3" fill="#06120E"/><rect x="-52" y="84" width="20" height="8" rx="3" fill="#06120E"/>
+ <circle cx="46" cy="44" r="34" fill="#06120E"/>
+ <circle cx="46" cy="44" r="34" fill="none" stroke="#10B981" stroke-width="8" stroke-dasharray="150 64" transform="rotate(130 46 44)"/>
+ <text x="46" y="53" text-anchor="middle" font-family="Menlo, monospace" font-weight="700" font-size="24" fill="#E8F4F8">72</text>
+</g>
+</svg>
