@@ -88,7 +88,7 @@ team's in the org's Teams → the team → Settings → Profile picture.
 
 ## social/
 
-One 1280×640 social preview per public repo, shown when a repo link is shared. They share one
+One 1280×640 social preview per MCP server repo, shown when a repo link is shared. They share one
 frame (dark-green terminal window, `#10B981` accent, an icon ring on the right) so the MCP
 servers read as a set; the title, tagline, prompt line and icon change per repo.
 

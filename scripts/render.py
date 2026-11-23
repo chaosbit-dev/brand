@@ -83,7 +83,9 @@ def social() -> None:
 
 
 def main(names: list[str]) -> None:
-    if names == ["--social"]:
+    if "--social" in names:
+        if names != ["--social"]:
+            sys.exit("usage: render.py --social   (renders every social/*.svg; takes no names)")
         social()
         return
     every = sorted(
