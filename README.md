@@ -1,5 +1,9 @@
 # brand
 
+[![License: all rights reserved](https://img.shields.io/badge/license-all%20rights%20reserved-10B981)](#license)
+[![Last commit](https://img.shields.io/github/last-commit/chaosbit-dev/brand?label=last%20commit)](https://github.com/chaosbit-dev/brand/commits/main)
+[![Assets: SVG](https://img.shields.io/badge/source-SVG-10B981)](#social)
+
 Visual assets for chaosbit-dev: the chaosbit logos, and the avatars for the org's GitHub Apps,
 accounts and teams.
 
@@ -88,9 +92,10 @@ team's in the org's Teams → the team → Settings → Profile picture.
 
 ## social/
 
-One 1280×640 social preview per MCP server repo, shown when a repo link is shared. They share one
-frame (dark-green terminal window, `#10B981` accent, an icon ring on the right) so the MCP
-servers read as a set; the title, tagline, prompt line and icon change per repo.
+One 1280×640 social preview per public repo, shown when a repo link is shared. They share one
+frame (dark-green terminal window, `#10B981` accent, an icon ring on the right) so the org's
+repos read as a set; the title, tagline, prompt line and icon change per repo. The file is named
+after the repo, except `.github`, whose preview is `dot-github.svg`.
 
 | Repo | Icon |
 |---|---|
@@ -98,6 +103,9 @@ servers read as a set; the title, tagline, prompt line and icon change per repo.
 | comlink | Envelope broadcasting, with a check seal |
 | obsidian-git-mcp | Obsidian shard with a git branch through it |
 | homeassistant-mcp | House with a lit bulb and a thermostat dial |
+| brand | Pen nib drawing a stroke beside colour swatches |
+| chaosbit.dev | Page of writing with an RSS badge |
+| .github (`dot-github.svg`) | Shield with a check, linked to four repo nodes |
 
 Keep everything that matters inside GitHub's safe zone, x 80–1200 and y 80–560: its repo-card
 template asks for a 40pt border, and unfurlers crop the edges.
@@ -108,3 +116,10 @@ python3 scripts/render.py --social      # writes out/social/<repo>.png
 
 Upload `out/social/<repo>.png` in the repo's Settings → General → Social preview → Edit →
 Upload an image. GitHub has no API for it. Repos have no avatars of their own; only the org does.
+
+## License
+
+There is no license file, so nothing here is licensed for reuse: the chaosbit marks, avatars and
+previews are © Brandon Luttrell, all rights reserved. That matches the
+[chaosbit.dev](https://github.com/chaosbit-dev/chaosbit.dev) site, whose marks these are. The
+projects that use them carry their own licenses in their own repos.
